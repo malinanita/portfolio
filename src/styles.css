@@ -118,6 +118,12 @@ ul{
     color:#a03f24;
 }
 
+.project_description {
+    color: #572618;
+    font-size: smaller;
+    font-style: italic;
+}
+
 article {
     background: #fff;
     padding-top: 0.5em;
