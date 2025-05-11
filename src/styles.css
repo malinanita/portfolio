@@ -23,7 +23,7 @@ main h3 {
     max-width: 700px;
     width: 100%;
     text-align: left;
-    margin-top: 2em;    
+    margin-top: 2em;  
 }
 
 nav {
@@ -87,6 +87,42 @@ p {
     max-width: 700px;
 }
 
+
+.project-page-text {
+    padding: 0;
+    text-align: left;
+    width: 100%;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project-page-text a {
+    color: #ff9a2d;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.project-page-text a:hover {
+    color: #a03f24;
+    text-decoration: underline;
+}
+
+.project-description-text {
+    font-family: 'Cormorant', serif;
+    font-weight: 400; /* Lättare vikt */
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #572618;
+    margin-top: 0;
+    width: 100%;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+
 ul{
     padding-left: 5em;
     padding-right: 3em;
@@ -109,16 +145,20 @@ ul{
     transform: scale(1.03);
 }
 
-.project_link {
+.project-page-image {
+    max-width: 750px;
+}
+
+.project-link {
     color: rgb(255, 154, 45);
     font-family: "DM Serif Display", serif;
 }
 
-.project_link:hover{
+.project-link:hover{
     color:#a03f24;
 }
 
-.project_description {
+.project-description {
     color: #572618;
     font-size: smaller;
     font-style: italic;
