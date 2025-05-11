@@ -23,7 +23,7 @@ main h3 {
     max-width: 700px;
     width: 100%;
     text-align: left;
-    margin-top: 2em;  
+    margin-top: 1em;  
 }
 
 nav {
@@ -89,12 +89,17 @@ p {
 
 
 .project-page-text {
-    padding: 0;
-    text-align: left;
+    font-family: 'Cormorant', serif;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #572618;
+    margin-top: 0;
     width: 100%;
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
+    text-align: left;
 }
 
 .project-page-text a {
@@ -138,7 +143,7 @@ ul{
 .project-image{
     max-width: 80%;
     transition: transform 0.3s ease;
-    padding-bottom: 0.5em;
+    padding-bottom: 1em;
 }
 
 .project-image:hover{
@@ -147,6 +152,7 @@ ul{
 
 .project-page-image {
     max-width: 750px;
+    padding-bottom: 1em;
 }
 
 .project-link {
