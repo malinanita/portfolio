@@ -74,6 +74,45 @@ h1 {
     padding-bottom: 1em;
 }
 
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2em;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.about-page-image {
+    width: 275px;
+    height: 275px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.about-text {
+    max-width: 320px;
+}
+
+.about-text h1 {
+    font-family: "DM Serif Display", serif;
+    margin-bottom: 0;
+    font-size: 40px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.about-text p {
+    font-family: 'Cormorant', serif;
+    font-weight: 400;
+    line-height: 1.7;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 0;
+}
 
 
 .header-image {
@@ -114,7 +153,6 @@ p {
     color: #a03f24;
     text-decoration: underline;
 }
-
 
 
 ul{
@@ -167,6 +205,13 @@ ul{
     font-style: italic;
 }
 
+#degree {
+    font-family: Arial, sans-serif;
+    color: #572618;
+    font-size: smaller;
+    font-style: italic;
+}
+
 article {
     background: #fff;
     padding-top: 0.5em;
@@ -190,9 +235,8 @@ footer {
 }
 
 footer p {
-    font-family: 'Cormorant', serif;
-    font-weight: 400;
-    font-size: 1rem;
+    font-weight: 700;
+    font-size: 0.9em;
 }
 
 /* Responsive Design */
