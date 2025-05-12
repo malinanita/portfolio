@@ -211,7 +211,6 @@ p {
     height: auto;
     border-radius: 50%;
     margin-top: 2em;
-    object-fit: cover;
 }
 
 .project-link {
@@ -389,11 +388,6 @@ footer p {
 
     .about-text p {
         text-align: left;
-    }
-
-
-    #about-page-image {
-        max-width: 90%;
     }
 
 
