@@ -1,5 +1,7 @@
 html, body {
     height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -24,6 +26,7 @@ main {
     flex-direction: column;
     align-items: center;
     padding: 2em 1em;
+    flex: 1;
 }
 
 main h3 {
@@ -202,13 +205,14 @@ p {
 }
 
 #about-page-image {
-    width: 400px;
-    height: 400px;
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    aspect-ratio: 1 / 1;
     line-height: 200px;
     border-radius: 50%;
     margin-top: 2em;
 }
-
 
 .project-link {
     color: rgb(255, 154, 45);
@@ -259,16 +263,20 @@ footer p {
     font-size: 0.9em;
 }
 
+
 /* Responsive Design */
 @media (max-width: 850px) {
 
     body {
-        padding-top: 120px; /* justera om navbaren är högre eller lägre */
+        padding-top: 120px; 
+        min-height: auto;
     }
 
     .project-body {
-        padding-top: 2em;
+        padding-top: 0;
     }
+
+
 
     nav {
         flex-direction: column;
