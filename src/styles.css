@@ -1,9 +1,15 @@
+html, body {
+    height: 100%;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
     color: #572618;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 footer{
@@ -25,6 +31,13 @@ main h3 {
     width: 100%;
     text-align: left;
     margin-top: 1em;  
+}
+
+main.about {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 nav {
@@ -101,7 +114,7 @@ h1 {
     max-width: 1000px;
     margin: 0 auto;
     padding: 2em;
-    margin-top: 200px;
+    margin-top: 180px;
     flex-wrap: wrap;
     text-align: left;
 }
