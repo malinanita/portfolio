@@ -208,9 +208,10 @@ p {
     width: 90%;
     max-width: 400px;
     aspect-ratio: 1 / 1;
-    height: auto;
     border-radius: 50%;
     margin-top: 2em;
+    object-fit: cover;
+    display: block;
 }
 
 .project-link {
