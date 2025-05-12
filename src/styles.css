@@ -32,6 +32,11 @@ nav {
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .logo {
@@ -41,9 +46,18 @@ nav {
 
 .nav-links {
     margin-left: auto;
+    margin-right: 3em;
     display: flex;
     align-items: center;
     gap: 2em;
+}
+
+.nav-links a:hover {
+    color:#ff9a2d
+}
+
+.nav-links a:active {
+    color: #92500a;
 }
 
 .links {
@@ -52,10 +66,10 @@ nav {
     font-weight: bold;
 }
 
-nav {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+.link-on-page {
+    color:#ff9a2d;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 
@@ -68,10 +82,15 @@ h1 {
     margin-top: 50px;
 }
 
+#h1-slogan {
+    margin-top: 3em;
+}
+
 .h1-project-page{
     margin: 0;
     padding-left: 0;
     padding-bottom: 1em;
+    margin-top: 3em;
 }
 
 .about-container {
@@ -187,7 +206,7 @@ ul{
     height: 275px;
     line-height: 200px;
     border-radius: 50%; /* the magic */
-    margin: 0 auto 40px;
+    margin-top: 2em;
 }
 
 .project-link {
