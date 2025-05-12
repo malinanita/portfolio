@@ -10,6 +10,9 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 main {
@@ -53,7 +56,7 @@ nav {
 }
 
 .nav-links a:hover {
-    color:#ff9a2d
+    color:#c75701
 }
 
 .nav-links a:active {
@@ -100,16 +103,9 @@ h1 {
     max-width: 1000px;
     margin: 0 auto;
     padding: 2em;
+    margin-top: 200px;
     flex-wrap: wrap;
     text-align: left;
-}
-
-.about-page-image {
-    width: 275px;
-    height: 275px;
-    border-radius: 50%;
-    object-fit: cover;
-    flex-shrink: 0;
 }
 
 .about-text {
@@ -174,13 +170,6 @@ p {
 }
 
 
-ul{
-    padding-left: 5em;
-    padding-right: 3em;
-    max-width: 600px;
-}
-
-
 #projects {
     padding: 40px;
     text-align: center;
@@ -201,13 +190,14 @@ ul{
     padding-bottom: 1em;
 }
 
-.about-page-image {
-    width: 275px;
-    height: 275px;
+#about-page-image {
+    width: 400px;
+    height: 400px;
     line-height: 200px;
-    border-radius: 50%; /* the magic */
+    border-radius: 50%;
     margin-top: 2em;
 }
+
 
 .project-link {
     color: rgb(255, 154, 45);
@@ -259,9 +249,14 @@ footer p {
 }
 
 /* Responsive Design */
-@media (max-width: 800px) {
+@media (max-width: 850px) {
 
     body {
+        padding-top: 120px; /* justera om navbaren är högre eller lägre */
+    }
+
+    .project-body {
+        padding-top: 2em;
     }
 
     nav {
@@ -273,6 +268,7 @@ footer p {
     .logo {
         height: 12px;
         padding-bottom: 1em;
+        padding-left: 0;
     }
 
     .nav-links {
@@ -286,16 +282,24 @@ footer p {
 
     #h1-slogan {
         margin-top: 0;
+        padding-left: 1em;
+        padding-right: 1em;
     }
 
     h1, #h1-slogan {
-        padding-left: 1em;
-        padding-right: 1em;
         text-align: center;
     }
 
-    h3 {
-        margin-left: 1.5em;
+    .h3-project-page {
+        margin-left: 2em;
+    }
+
+    .project-description {
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     p, .project-page-text {
@@ -311,6 +315,7 @@ footer p {
         margin-right: 1em;
     }
 
+
     .project-image {
         max-width: 90%;
         height: auto;
@@ -323,17 +328,35 @@ footer p {
     .about-container {
         flex-direction: column;
         align-items: center;
-        text-align: left;
+        text-align: center;
+        margin-top: 1em;
     }
 
     .about-text {
         max-width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
-    #about-page-image {
-        margin-top: 2em;
-        margin-bottom: 0.5em;
+    .about-text h1 {
+        text-align: center;
     }
+
+    #degree {
+        text-align: center;
+        margin-top: 0.3em;
+    }
+
+    .about-text p {
+        text-align: left;
+    }
+
+
+    #about-page-image {
+        max-width: 90%;
+    }
+
 
     footer p {
         padding-left: 1em;
