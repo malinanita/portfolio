@@ -113,7 +113,7 @@ h1 {
 .about-container {
     display: flex;
     align-items: center;
-    gap: 2em;
+    gap: 4em;
     max-width: 1000px;
     margin: 0 auto;
     padding: 2em;
