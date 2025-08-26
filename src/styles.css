@@ -325,17 +325,18 @@ footer p {
     .logo {
         height: 12px;
         padding-bottom: 1em;
-        padding-left: 0;
+        margin-left: -5em;
     }
 
     .nav-links {
         gap: 1em;
-        margin: 1em 0;
+        margin: 1em 0 0 -4em;
     }
 
     h1 {
         margin-top: 2em;
     }
+
 
     #h1-slogan {
         margin-top: 0;
@@ -398,6 +399,7 @@ footer p {
 
     .about-text h1 {
         text-align: center;
+        margin-top: -1em;
     }
 
     #degree {
