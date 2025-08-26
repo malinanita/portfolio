@@ -5,7 +5,7 @@ html, body {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: Calibri, sans-serif;
     background-color: #f9f9f9;
     color: #572618;
     margin: 0;
@@ -34,6 +34,7 @@ main h3 {
     width: 100%;
     text-align: left;
     margin-top: 1em;  
+    font-weight: 400;
 }
 
 main.about {
@@ -70,23 +71,24 @@ nav {
 }
 
 .nav-links a:hover {
-    color:#c75701
+    color:#c75701;
 }
 
 .nav-links a:active {
     color: #92500a;
+    font-weight: 100;
 }
 
 .links {
     text-decoration: none;
     color: #5a3e36;
-    font-weight: bold;
+    font-weight: 100;
 }
 
 .link-on-page {
     color:#ff9a2d;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 250;
 }
 
 
@@ -97,17 +99,25 @@ h1 {
     text-align: left;
     padding-left: 3em;
     margin-top: 50px;
+    margin-bottom: 25px;
 }
 
 #h1-slogan {
     margin-top: 3em;
 }
 
-.h1-project-page{
+.h2-project-page{
     margin: 0;
     padding-left: 0;
-    padding-bottom: 1em;
+    padding-bottom: 0.7em;
     margin-top: 3em;
+    font-size: 35px;
+    font-weight: 100;
+}
+
+h2 {
+    font-weight: 50;
+    font-family: "Calibri", sans-serif;
 }
 
 .about-container {
@@ -124,25 +134,35 @@ h1 {
 
 .about-text {
     max-width: 320px;
+    font-size: 16px;
+    padding-top: 1em;
 }
 
 .about-text h1 {
-    font-family: "DM Serif Display", serif;
+    font-family: "Calibri", sans-serif;
     margin-bottom: 0;
-    font-size: 40px;
+    font-size: 30px;
+    font-weight: 100;
     padding-left: 0;
     padding-right: 0;
 }
 
 .about-text p {
-    font-family: 'Cormorant', serif;
-    font-weight: 400;
-    line-height: 1.7;
+    font-family: 'Calibri', sans-serif;
+    font-weight: 100;
+    line-height: 1.5;
     padding-left: 0;
     padding-right: 0;
     margin-top: 0;
 }
 
+.about-text .about-name {
+    font-size: 50px;
+}
+
+.about-text b{
+    font-size: 20px;
+}
 
 .header-image {
     width: 100%;
@@ -158,8 +178,7 @@ p {
 }
 
 .project-page-text {
-    font-family: 'Cormorant', serif;
-    font-weight: 400;
+    font-weight: 100;
     font-size: 1rem;
     line-height: 1.8;
     color: #572618;
@@ -175,6 +194,7 @@ p {
 .project-page-text a {
     color: #ff9a2d;
     text-decoration: none;
+    font-size: 15px;
     font-weight: normal;
 }
 
@@ -216,6 +236,7 @@ p {
 .project-link {
     color: rgb(255, 154, 45);
     font-family: "DM Serif Display", serif;
+    font-size: smaller;
 }
 
 .project-link:hover{
@@ -225,11 +246,9 @@ p {
 .project-description {
     color: #572618;
     font-size: smaller;
-    font-style: italic;
 }
 
 #degree {
-    font-family: Arial, sans-serif;
     color: #572618;
     font-size: smaller;
     font-style: italic;
@@ -257,11 +276,11 @@ article .h3project{
     color: rgb(41, 0, 0);
     text-decoration: none;
     border-radius: 30px;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 12px;
     border: none;
     cursor: pointer;
-    margin-bottom: 0;
+    margin-bottom: 2em;
 }
 
 .back-button:hover {
@@ -280,7 +299,7 @@ footer {
 }
 
 footer p {
-    font-weight: 700;
+    font-weight: 200;
     font-size: 0.9em;
 }
 
