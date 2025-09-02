@@ -93,13 +93,15 @@ nav {
 
 
 h1 {
-    font-family: "DM Serif Display", serif;
-    font-weight: 400;
+    
+    font-weight: 200;
     font-style: normal;
+    font-size: 2.5em;
+    line-height: 1.35em;
     text-align: left;
     padding-left: 3em;
     margin-top: 55px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
 #h1-slogan {
@@ -236,7 +238,6 @@ p {
 .project-link {
     color: rgb(255, 154, 45);
     font-family: "DM Serif Display", serif;
-    font-size: smaller;
 }
 
 .project-link:hover{
