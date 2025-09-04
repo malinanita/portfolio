@@ -330,7 +330,7 @@ article .h3project {
         padding-top: 0;
     }
 
-    .nav-links .links, .nav-links .link-on-page {
+    .links, .nav-links .link-on-page {
         margin-left: auto;
         margin-right: 2em;
     }
@@ -379,7 +379,7 @@ article .h3project {
 
     article {
         width: 95%;
-        margin: 0 1em;
+        margin: 2em 1em;
     }
 
     .project-image {
@@ -434,14 +434,16 @@ article .h3project {
         height: 10px;
     }
 
+   .nav-links {
+        font-size: 12px;
+   }
+
     h1, #h1-slogan {
         font-size: 1.5em;
         line-height: 1.3;
     }
 
-    .nav-links a {
-        font-size: 0.9em;
-    }
+    
 
     .project-description {
         font-size: 0.8em;
