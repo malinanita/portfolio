@@ -330,23 +330,18 @@ article .h3project {
         padding-top: 0;
     }
 
+    .nav-links .links, .nav-links .link-on-page {
+        margin-left: auto;
+        margin-right: 2em;
+    }
 
     .logo {
-        height: 12px;
-        padding-bottom: 1em;
+        margin-top: 0.5em;
         margin-right: 1em;
     }
 
-    nav {
-        display: flex;
-        justify-content: center; 
-        align-items: center;
-        flex-direction: column;
-        padding: 1em;
-    }
-
-    .nav-links {
-        margin: 0; 
+    .header-image {
+        width: 100%;
     }
 
     h1 {
