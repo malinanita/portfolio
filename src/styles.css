@@ -1,3 +1,6 @@
+/* ================================
+   Global Reset & Base Styles
+================================= */
 html, body {
     height: 100%;
     margin: 0;
@@ -8,42 +11,13 @@ body {
     font-family: Calibri, sans-serif;
     background-color: #f9f9f9;
     color: #572618;
-    margin: 0;
-    padding: 0;
     display: flex;
     flex-direction: column;
 }
 
-footer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2em 1em;
-    flex: 1;
-}
-
-main h3 {
-    max-width: 700px;
-    width: 100%;
-    text-align: left;
-    margin-top: 1em;  
-    font-weight: 400;
-}
-
-main.about {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
+/* ================================
+   Navigation
+================================= */
 nav {
     display: flex;
     align-items: center;
@@ -71,7 +45,7 @@ nav {
 }
 
 .nav-links a:hover {
-    color:#c75701;
+    color: #c75701;
 }
 
 .nav-links a:active {
@@ -86,33 +60,30 @@ nav {
 }
 
 .link-on-page {
-    color:#ff9a2d;
+    color: #ff9a2d;
     text-decoration: none;
     font-weight: 250;
 }
 
-
+/* ================================
+   Headings & Typography
+================================= */
 h1 {
-    
     font-weight: 200;
-    font-style: normal;
     font-size: 2.5em;
     line-height: 1.35em;
     text-align: left;
     padding-left: 3em;
-    margin-top: 55px;
-    margin-bottom: 60px;
+    margin: 55px 0 60px;
 }
 
 #h1-slogan {
     margin-top: 3em;
 }
 
-.h2-project-page{
-    margin: 0;
-    padding-left: 0;
+.h2-project-page {
+    margin: 3em 0 0 0;
     padding-bottom: 0.7em;
-    margin-top: 3em;
     font-size: 35px;
     font-weight: 100;
 }
@@ -122,14 +93,58 @@ h2 {
     font-family: "Calibri", sans-serif;
 }
 
+main h3 {
+    max-width: 700px;
+    width: 100%;
+    text-align: left;
+    margin-top: 1em;  
+    font-weight: 400;
+}
+
+/* ================================
+   Layout (Main & Footer)
+================================= */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em 1em;
+    flex: 1;
+}
+
+main.about {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    margin-top: 40px;
+}
+
+footer p {
+    font-weight: 200;
+    font-size: 0.9em;
+}
+
+/* ================================
+   About Section
+================================= */
 .about-container {
     display: flex;
     align-items: center;
     gap: 4em;
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 180px auto 0;
     padding: 2em;
-    margin-top: 180px;
     flex-wrap: wrap;
     text-align: left;
 }
@@ -142,30 +157,45 @@ h2 {
 
 .about-text h1 {
     font-family: "Calibri", sans-serif;
-    margin-bottom: 0;
     font-size: 30px;
     font-weight: 100;
-    padding-left: 0;
-    padding-right: 0;
+    margin-bottom: 0;
+    padding: 0;
 }
 
 .about-text p {
-    font-family: 'Calibri', sans-serif;
+    font-family: Calibri, sans-serif;
     font-weight: 100;
     line-height: 1.5;
-    padding-left: 0;
-    padding-right: 0;
     margin-top: 0;
+    padding: 0;
 }
 
 .about-text .about-name {
     font-size: 50px;
 }
 
-.about-text b{
+.about-text b {
     font-size: 20px;
 }
 
+#about-page-image {
+    width: 90%;
+    max-width: 400px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    margin-top: 2em;
+}
+
+#degree {
+    color: #572618;
+    font-size: smaller;
+    font-style: italic;
+}
+
+/* ================================
+   Content Elements
+================================= */
 .header-image {
     width: 100%;
     height: auto;
@@ -184,14 +214,11 @@ p {
     font-size: 1rem;
     line-height: 1.8;
     color: #572618;
-    margin-top: 0;
+    margin: 0 auto;
     width: 100%;
     max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
     text-align: left;
 }
-
 
 .project-page-text a {
     color: #ff9a2d;
@@ -205,19 +232,21 @@ p {
     text-decoration: underline;
 }
 
-
+/* ================================
+   Projects Section
+================================= */
 #projects {
     padding: 40px;
     text-align: center;
 }
 
-.project-image{
+.project-image {
     max-width: 80%;
     transition: transform 0.3s ease;
     padding-bottom: 1em;
 }
 
-.project-image:hover{
+.project-image:hover {
     transform: scale(1.03);
 }
 
@@ -226,22 +255,13 @@ p {
     padding-bottom: 1em;
 }
 
-#about-page-image {
-    width: 90%;
-    max-width: 400px;
-    aspect-ratio: 1 / 1;
-    height: auto;
-    border-radius: 50%;
-    margin-top: 2em;
-}
-
 .project-link {
     color: rgb(255, 154, 45);
     font-family: "DM Serif Display", serif;
 }
 
-.project-link:hover{
-    color:#a03f24;
+.project-link:hover {
+    color: #a03f24;
 }
 
 .project-description {
@@ -249,16 +269,17 @@ p {
     font-size: smaller;
 }
 
-#degree {
-    color: #572618;
-    font-size: smaller;
-    font-style: italic;
+.p-margin {
+    margin-bottom: 0.5em;
+    margin-top: 0.3em;
 }
 
+/* ================================
+   Article (Project Cards)
+================================= */
 article {
     background: #fff;
-    padding-top: 0.5em;
-    padding-bottom: 3em;
+    padding: 0.5em 0 3em;
     margin: 2em auto;
     width: 80%;
     max-width: 800px;
@@ -266,10 +287,13 @@ article {
     text-align: center;
 }
 
-article .h3project{
+article .h3project {
     text-align: center;
 }
 
+/* ================================
+   Buttons
+================================= */
 .back-button {
     display: inline-block;
     padding: 0.5em 1em;
@@ -285,27 +309,16 @@ article .h3project{
 }
 
 .back-button:hover {
-    background-color:#ff9a2d;
+    background-color: #ff9a2d;
 }
 
 .back-button:active {
-    background-color:#d77f22;
+    background-color: #d77f22;
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #fff;
-    margin-top: 40px;
-}
-
-footer p {
-    font-weight: 200;
-    font-size: 0.9em;
-}
-
-
-/* Responsive Design */
+/* ================================
+   Responsive Design
+================================= */
 @media (max-width: 850px) {
 
     body {
@@ -317,32 +330,32 @@ footer p {
         padding-top: 0;
     }
 
-    nav {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-    }
 
     .logo {
         height: 12px;
         padding-bottom: 1em;
-        margin-left: -5em;
+        margin-right: 1em;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        flex-direction: column;
+        padding: 1em;
     }
 
     .nav-links {
-        gap: 1em;
-        margin: 1em 0 0 -4em;
+        margin: 0; 
     }
 
     h1 {
         margin-top: 2em;
     }
 
-
     #h1-slogan {
         margin-top: 0;
-        padding-left: 1em;
-        padding-right: 1em;
+        padding: 0 1em;
     }
 
     h1, #h1-slogan {
@@ -350,30 +363,29 @@ footer p {
     }
 
     .h3-project-page {
-        margin-left: 2em;
-    }
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+        font-weight: 400;
+}
 
     .project-description {
         text-align: center;
-        padding-left: 0;
-        padding-right: 0;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 auto;
+        padding: 0;
     }
 
     p, .project-page-text {
-        padding-left: 1em;
-        padding-right: 1em;
+        padding: 0 1em;
         text-align: left;
         max-width: 90%;
     }
 
     article {
         width: 95%;
-        margin-left: 1em;
-        margin-right: 1em;
+        margin: 0 1em;
     }
-
 
     .project-image {
         max-width: 90%;
@@ -412,14 +424,11 @@ footer p {
         text-align: left;
     }
 
-
     footer p {
-        padding-left: 1em;
-        padding-right: 1em;
+        padding: 0 1em;
         text-align: center;
     }
 }
-
 
 @media (max-width: 480px) {
     nav {
@@ -451,4 +460,3 @@ footer p {
         font-size: 0.8em;
     }
 }
-
