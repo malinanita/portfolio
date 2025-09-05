@@ -1,3 +1,6 @@
+/* ================================
+   Global Reset & Base Styles
+================================= */
 html, body {
     height: 100%;
     margin: 0;
@@ -5,44 +8,16 @@ html, body {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: Calibri, sans-serif;
     background-color: #f9f9f9;
     color: #572618;
-    margin: 0;
-    padding: 0;
     display: flex;
     flex-direction: column;
 }
 
-footer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2em 1em;
-    flex: 1;
-}
-
-main h3 {
-    max-width: 700px;
-    width: 100%;
-    text-align: left;
-    margin-top: 1em;  
-}
-
-main.about {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
+/* ================================
+   Navigation
+================================= */
 nav {
     display: flex;
     align-items: center;
@@ -63,87 +38,164 @@ nav {
 
 .nav-links {
     margin-left: auto;
-    margin-right: 3em;
+    margin-right: 4em;
     display: flex;
     align-items: center;
     gap: 2em;
 }
 
 .nav-links a:hover {
-    color:#c75701
+    color: #c75701;
 }
 
 .nav-links a:active {
     color: #92500a;
+    font-weight: 100;
 }
 
 .links {
     text-decoration: none;
     color: #5a3e36;
-    font-weight: bold;
+    font-weight: 100;
 }
 
 .link-on-page {
-    color:#ff9a2d;
+    color: #ff9a2d;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 250;
 }
 
-
+/* ================================
+   Headings & Typography
+================================= */
 h1 {
-    font-family: "DM Serif Display", serif;
-    font-weight: 400;
-    font-style: normal;
+    font-weight: 200;
+    font-size: 2.5em;
+    line-height: 1.35em;
     text-align: left;
     padding-left: 3em;
-    margin-top: 50px;
+    margin: 55px 0 60px;
 }
 
 #h1-slogan {
     margin-top: 3em;
 }
 
-.h1-project-page{
-    margin: 0;
-    padding-left: 0;
-    padding-bottom: 1em;
-    margin-top: 3em;
+.h2-project-page {
+    margin: 3em 0 0 0;
+    padding-bottom: 0.7em;
+    font-size: 35px;
+    font-weight: 100;
 }
 
+h2 {
+    font-weight: 50;
+    font-family: "Calibri", sans-serif;
+}
+
+main h3 {
+    max-width: 700px;
+    width: 100%;
+    text-align: left;
+    margin-top: 1em;  
+    font-weight: 400;
+}
+
+/* ================================
+   Layout (Main & Footer)
+================================= */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em 1em;
+    flex: 1;
+}
+
+main.about {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    margin-top: 40px;
+}
+
+footer p {
+    font-weight: 200;
+    font-size: 0.9em;
+}
+
+/* ================================
+   About Section
+================================= */
 .about-container {
     display: flex;
     align-items: center;
-    gap: 2em;
+    gap: 4em;
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 180px auto 0;
     padding: 2em;
-    margin-top: 180px;
     flex-wrap: wrap;
     text-align: left;
 }
 
 .about-text {
     max-width: 320px;
+    font-size: 16px;
+    padding-top: 1em;
 }
 
 .about-text h1 {
-    font-family: "DM Serif Display", serif;
+    font-family: "Calibri", sans-serif;
+    font-size: 30px;
+    font-weight: 100;
     margin-bottom: 0;
-    font-size: 40px;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 0;
 }
 
 .about-text p {
-    font-family: 'Cormorant', serif;
-    font-weight: 400;
-    line-height: 1.7;
-    padding-left: 0;
-    padding-right: 0;
+    font-family: Calibri, sans-serif;
+    font-weight: 100;
+    line-height: 1.5;
     margin-top: 0;
+    padding: 0;
 }
 
+.about-text .about-name {
+    font-size: 50px;
+}
 
+.about-text b {
+    font-size: 20px;
+}
+
+#about-page-image {
+    width: 90%;
+    max-width: 400px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    margin-top: 2em;
+}
+
+#degree {
+    color: #572618;
+    font-size: smaller;
+    font-style: italic;
+}
+
+/* ================================
+   Content Elements
+================================= */
 .header-image {
     width: 100%;
     height: auto;
@@ -158,23 +210,20 @@ p {
 }
 
 .project-page-text {
-    font-family: 'Cormorant', serif;
-    font-weight: 400;
+    font-weight: 100;
     font-size: 1rem;
     line-height: 1.8;
     color: #572618;
-    margin-top: 0;
+    margin: 0 auto;
     width: 100%;
     max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
     text-align: left;
 }
-
 
 .project-page-text a {
     color: #ff9a2d;
     text-decoration: none;
+    font-size: 15px;
     font-weight: normal;
 }
 
@@ -183,19 +232,21 @@ p {
     text-decoration: underline;
 }
 
-
+/* ================================
+   Projects Section
+================================= */
 #projects {
     padding: 40px;
     text-align: center;
 }
 
-.project-image{
+.project-image {
     max-width: 80%;
     transition: transform 0.3s ease;
     padding-bottom: 1em;
 }
 
-.project-image:hover{
+.project-image:hover {
     transform: scale(1.03);
 }
 
@@ -204,42 +255,31 @@ p {
     padding-bottom: 1em;
 }
 
-#about-page-image {
-    width: 90%;
-    max-width: 400px;
-    aspect-ratio: 1 / 1;
-    border-radius: 50%;
-    margin-top: 2em;
-    object-fit: cover;
-    display: block;
-}
-
 .project-link {
     color: rgb(255, 154, 45);
     font-family: "DM Serif Display", serif;
 }
 
-.project-link:hover{
-    color:#a03f24;
+.project-link:hover {
+    color: #a03f24;
 }
 
 .project-description {
     color: #572618;
     font-size: smaller;
-    font-style: italic;
 }
 
-#degree {
-    font-family: Arial, sans-serif;
-    color: #572618;
-    font-size: smaller;
-    font-style: italic;
+.p-margin {
+    margin-bottom: 0.5em;
+    margin-top: 0.3em;
 }
 
+/* ================================
+   Article (Project Cards)
+================================= */
 article {
     background: #fff;
-    padding-top: 0.5em;
-    padding-bottom: 3em;
+    padding: 0.5em 0 3em;
     margin: 2em auto;
     width: 80%;
     max-width: 800px;
@@ -247,10 +287,13 @@ article {
     text-align: center;
 }
 
-article .h3project{
+article .h3project {
     text-align: center;
 }
 
+/* ================================
+   Buttons
+================================= */
 .back-button {
     display: inline-block;
     padding: 0.5em 1em;
@@ -258,35 +301,24 @@ article .h3project{
     color: rgb(41, 0, 0);
     text-decoration: none;
     border-radius: 30px;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 12px;
     border: none;
     cursor: pointer;
-    margin-bottom: 0;
+    margin-bottom: 2em;
 }
 
 .back-button:hover {
-    background-color:#ff9a2d;
+    background-color: #ff9a2d;
 }
 
 .back-button:active {
-    background-color:#d77f22;
+    background-color: #d77f22;
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #fff;
-    margin-top: 40px;
-}
-
-footer p {
-    font-weight: 700;
-    font-size: 0.9em;
-}
-
-
-/* Responsive Design */
+/* ================================
+   Responsive Design
+================================= */
 @media (max-width: 850px) {
 
     body {
@@ -294,66 +326,72 @@ footer p {
         min-height: auto;
     }
 
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5em 0;
+        width: 100%;
+        max-width: 100vw; 
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+    
     .project-body {
         padding-top: 0;
     }
 
-    nav {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
+    .nav-links {
+        display: flex;
+        list-style: none;
+        gap: 1em;
+        margin: 0;
+        justify-content: center;
     }
+
 
     .logo {
-        height: 12px;
-        padding-bottom: 1em;
-        padding-left: 0;
+        margin: 0;
+        padding: 0 0 1em 0;
     }
 
-    .nav-links {
-        gap: 1em;
-        margin: 1em 0;
+    .header-image {
+        width: 100%;
     }
 
-    h1 {
-        margin-top: 2em;
-    }
 
     #h1-slogan {
-        margin-top: 0;
-        padding-left: 1em;
-        padding-right: 1em;
-    }
-
-    h1, #h1-slogan {
+        margin-top: 1em;
+        padding: 0 1em;
         text-align: center;
     }
 
+
     .h3-project-page {
-        margin-left: 2em;
-    }
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+        font-weight: 400;
+}
 
     .project-description {
         text-align: center;
-        padding-left: 0;
-        padding-right: 0;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 auto;
+        padding: 0 0 1em 0;
     }
 
+
     p, .project-page-text {
-        padding-left: 1em;
-        padding-right: 1em;
+        padding: 0 1em;
         text-align: left;
         max-width: 90%;
     }
 
     article {
         width: 95%;
-        margin-left: 1em;
-        margin-right: 1em;
+        margin: 2em 1em;
+        padding-bottom: 2em;
     }
-
 
     .project-image {
         max-width: 90%;
@@ -380,6 +418,7 @@ footer p {
 
     .about-text h1 {
         text-align: center;
+        margin-top: -1em;
     }
 
     #degree {
@@ -391,31 +430,27 @@ footer p {
         text-align: left;
     }
 
-
-    footer p {
-        padding-left: 1em;
-        padding-right: 1em;
+    footer {
+        padding: 0;
         text-align: center;
+        margin: 0;
     }
 }
 
+@media (max-width: 500px) {
 
-@media (max-width: 480px) {
-    nav {
-        padding: 8px;
-    }
-
-    .logo {
-        height: 10px;
+    main {
+        justify-content: center;
     }
 
     h1, #h1-slogan {
-        font-size: 1.5em;
+        font-size: 1.3em;
         line-height: 1.3;
+        margin: 0 0;
     }
 
-    .nav-links a {
-        font-size: 0.9em;
+    h2 {
+        font-size: 1.2em;
     }
 
     .project-description {
@@ -429,5 +464,15 @@ footer p {
     footer p {
         font-size: 0.8em;
     }
-}
 
+    article {
+        width: 100%;
+        margin: 2em auto;
+    }
+
+    #projects {
+        padding: 0;
+        width:100%;
+    }
+
+}
