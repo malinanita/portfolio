@@ -372,7 +372,7 @@ article .h3project {
         margin-right: auto;
         text-align: left;
         font-weight: 400;
-}
+    }
 
     .project-description {
         text-align: center;
@@ -437,11 +437,15 @@ article .h3project {
     }
 }
 
-@media (max-width: 500px) {
 
+@media (max-width: 500px) {
     main {
         justify-content: center;
     }
+
+   .nav-links {
+        font-size: 12px;
+   }
 
     h1, #h1-slogan {
         font-size: 1.3em;
@@ -474,5 +478,4 @@ article .h3project {
         padding: 0;
         width:100%;
     }
-
 }
