@@ -273,6 +273,10 @@ p {
     max-width: 750px;
 }
 
+video {
+    max-width: 750px;
+}
+
 .project-link {
     color: rgb(255, 154, 45);
     font-family: "DM Serif Display", serif;
@@ -419,6 +423,10 @@ article .h3project {
     }
 
     .project-page-image {
+        max-width: 80vw;
+    }
+
+    video {
         max-width: 80vw;
     }
 
