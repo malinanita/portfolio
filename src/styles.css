@@ -141,13 +141,17 @@ footer p {
 /* ================================
    About Section
 ================================= */
+.about {
+    padding-top: 0;
+}
+
 .about-container {
     display: flex;
     align-items: center;
     gap: 4em;
     max-width: 1000px;
     margin: 180px auto 0;
-    padding: 2em;
+    padding: 0em 2em 2em 2em;
     flex-wrap: wrap;
     text-align: left;
 }
