@@ -277,6 +277,22 @@ p {
     max-width: 750px;
 }
 
+.project-page-list {
+    text-align: left;
+    padding-left: 6rem;
+    margin: 0;
+    font-weight: 100;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #572618;
+    width: 100%;
+    max-width: 600px;
+    text-align: left;
+}
+
+
+
+
 video {
     max-width: 750px;
 }
