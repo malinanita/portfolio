@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script defer src="../script.js"></script>
+</head>
+<body class="project-body">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <header>
+        <nav>
+            <a href="../index.html">
+                <img src="../images/logo.png" alt="Logo" class="logo">
+            </a>
+            <div class="nav-links">
+                <a href="../index.html" class="links">Home</a>
+                <a href="../index.html#projects" class="links">Projects</a>
+                <a href="../about.html" class="links">About Me</a>
+            </div>
+        </nav>
+       
+    </header>
+    
+    <main>
+        <h2 class="h2-project-page">Music Player</h2>
+        <a href="../index.html#projects" class="back-button">← Back</a></br>
+        
+        <p class="project-page-text"><b>Github: </b><a class="github-project" href="https://github.com/malinanita/plantshop" target="_blank">https://github.com/malinanita/music-player</a></p>
+        <p class="project-page-text"><b>Technologies: </b>Next.js, React, TypeScript, Tailwind CSS, iTunes API</p>
+    
+        
+        <h3 class="h3-project-page">Project Description:</h3>
+        <p class="project-page-text">
+            A music player web app built with Next.js, where users can search for songs through the iTunes Search API and play 30-second audio previews. 
+            The app fetches song data based on URL search parameters and maps the external API response into an internal song model used throughout the interface.</br></br>
+            The currently selected song is shown in a persistent player panel, and the active song is visually highlighted in the song grid. Playback state is handled in React, 
+            allowing the play button to update depending on whether a song is currently playing or paused.</br></br> 
+            The project also includes a like feature, where users can save songs to a “Liked Songs” page using a server-side in-memory store. This part is still under development, 
+            with further improvements planned for playback from the liked songs page, layout refinements and clear feedback on which page is active. </br>Additionally, a feature for theme customization will be implemented.</br></br> 
+            This project has helped me strengthen my skills in Next.js, React state management, working with external APIs, TypeScript models, component-based architecture, and creating interactive 
+            user interfaces. </br></br> </p>
+        
+        <h3 class="h3-project-page">Project Images</h3>
+
+        <p class="project-page-text p-margin"> <b>Playback & Song Selection:</b></p>
+        <img class="project-page-image" src="../images/musicplayer-playing.jpg" alt="Music Player playing view">
+
+        <p class="project-page-text p-margin"> <b>Browse & Discover</b></p>
+        <img class="project-page-image" src="../images/musicplayer-search.jpg" alt="Music Player search and empty state">
+        
+        <p class="project-page-text p-margin"> <b>Like-function:</b></p>
+        <img class="project-page-image" src="../images/musicplayer-like.jpg" alt="Music Player like function">
+
+        <!--<p class="project-page-text p-margin"> <b>Liked page:</b></p>
+        <img class="project-page-image" src="../images/musicplayer-likedpage.jpg" alt="Music Player liked songs page">-->
+        <br/><br/>
+        
+    </main>
+    
+    <footer>
+        <p>Last updated: 2026</p>
+    </footer>
+</body>
+</html>
+
+
+
+
